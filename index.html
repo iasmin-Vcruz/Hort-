@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hort</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  
+  </head>
+  <body>
+    <div class="container">
+      <h1>Horta</h1>
+      <div id="buscar">
+        <div class="row">
+          <div id="lupa"><i class="fa fa-search"></i></div>
+          <input type="text" id="pesquisa" name="pesquisa" placeholder="Buscar..."> 
+        </div>
+       
+      </div>
+      <div class="item">
+        <h1>Tubérculos</h1>
+        <div class="lista">
+          <div id="batata" onclick="to('batata')"> 
+            <div class="container-info"> 
+              <div class="info">
+                <i class="fa fa-info"></i>
+              </div>
+            </div>
+            <img src="./images/batata.svg" alt="batata" width="150px">
+            <p>Batata</p>
+            <div class="mais">
+              <p>Saiba Mais</p>
+            </div>
+          
+          </div>
+          
+          <div id="cenoura" onclick="to('cenoura')">
+            <div class="container-info"> 
+              <div class="info">
+                <i class="fa fa-info"></i>
+              </div>
+            </div>
+            <img src="./images/cenoura.svg" alt="cenoura" width="150px">
+            <p>Cenoura</p>
+            <div class="mais">
+              <p>Saiba Mais</p>
+            </div>
+          </div>
+          <div id="rabanete" onclick="to('rabanete')">
+            <div class="container-info"> 
+              <div class="info">
+                <i class="fa fa-info"></i>
+              </div>
+            </div>
+            <img src="./images/rabanete.svg" alt="rabanete" width="150px">
+            <p>Beterraba</p>
+            <div class="mais">
+              <p>Saiba Mais</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h1>Frutas</h1>
+        <div class="lista">
+          <div id="Tomate" onclick="to('tomate')">
+            <div class="container-info"> 
+              <div class="info">
+                <i class="fa fa-info"></i>
+              </div>
+            </div>
+            <img src="./images/tomate.svg" alt="tomate" width="150px">
+            <p>Tomate</p>
+            <div class="mais">
+              <p>Saiba Mais</p>
+            </div>
+          </div>
+          <div id="Pimentao" onclick="to('pimentao')">
+            <div class="container-info"> 
+              <div class="info">
+                <i class="fa fa-info"></i>
+              </div>
+            </div>
+            <img src="./images/pimentao.svg" alt="pimentao" width="150px">
+            <p>Pimentão</p>
+            <div class="mais">
+              <p>Saiba Mais</p>
+            </div>
+          </div>
+          <div id="pepino" onclick="to('pepino')">
+            <div class="container-info"> 
+              <div class="info">
+                <i class="fa fa-info"></i>
+              </div>
+            </div>
+            <img src="./images/pepino.svg" alt="pepino" width="150px">
+            <p>Pepino</p>
+            <div class="mais">
+              <p>Saiba Mais</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <h1>Verduras</h1>
+          <div class="lista">
+            <div id="Couve" onclick="to('couve')">
+              <div class="container-info"> 
+                <div class="info">
+                  <i class="fa fa-info"></i>
+                </div>
+              </div>
+              <img src="./images/couve.svg" alt="couve" width="150px">
+              <p>Couve</p>
+              <div class="mais">
+                <p>Saiba Mais</p>
+              </div>
+            </div>
+            <div id="Repolho" onclick="to('repolho')">
+              <div class="container-info"> 
+                <div class="info">
+                  <i class="fa fa-info"></i>
+                </div>
+              </div>
+              <img src="./images/repolho.svg" alt="repolho" width="150px">
+              <p>Repolho</p>
+              <div class="mais">
+                <p>Saiba Mais</p>
+              </div>
+            </div>
+            <div id="Alface" onclick="to('alface')">
+              <div class="container-info"> 
+                <div class="info">
+                  <i class="fa fa-info"></i>
+                </div>
+              </div>
+              <img src="./images/alface.svg" alt="alface" width="150px">
+              <p>Alface</p>
+              <div class="mais">
+                <p>Saiba Mais</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="spacing"></div>
+    </div>
+    <script>
+      function to(destino){
+            var link = window.location.href;
+            link = link.replace('index.html', '');
+            window.location.href = link + 'horta/' + destino + '.html';
+        }  
+    </script>
+  </body>
+</html>

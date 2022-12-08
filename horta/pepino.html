@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Pepino</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <i class="fa fa-chevron-left" onclick="voltar()"></i>
+        <h1>Horta</h1>
+        <p></p>
+      </div>
+      <div class="images">
+        <img src="../images/eclipse.svg" alt="eclipse" />
+        <img src="../images/pepino.svg" alt="pepino" class="img" />
+      </div>
+      <div class="conteudo">
+        <h1>Pepino</h1>
+        <p>
+          O pepino é o fruto do pepineiro, que se come geralmente em forma de
+          salada. O pepino é um diurético natural e de grande ajuda na
+          dissolução de cálculos renais. Ele é rico em potássio, que proporciona
+          flexibilidade aos músculos e dá elasticidade às células que compõem a
+          pele.
+        </p>
+        <h2>Benefícios</h2>
+        <p>
+          - O pepino ajuda a emagrecer, porque é pobre em calorias e dá a
+          sensação de saciedade;
+        </p>
+        <p>
+          - Melhora a contração e saúde muscular, por conter potássio e
+          magnésio;
+        </p>
+        <p>
+          - Melhora a circulação sanguínea, por ser pobre em gorduras e rico em
+          água;
+        </p>
+        <p>- Mantém a hidratação, por ser feito principalmente de água;</p>
+        <p>- Melhora o trânsito intestinal;</p>
+        <p>
+          - Previne o câncer, por ser rico em flavonoides e lignanas, que são
+          antioxidantes poderosos;
+        </p>
+        <p>
+          - Melhora a saúde da pele, unhas, olhos e cabelo, por conter
+          antioxidantes e carotenoides;
+        </p>
+        <p>- Melhora a saúde do coração, por ser rico em potássio.</p>
+      </div>
+    </div>
+    <script>
+      function voltar() {
+        var link = window.location.href
+        link = link.replace('horta/pepino.html', '')
+        window.location.href = link + 'index.html'
+      }
+    </script>
+  </body>
+</html>

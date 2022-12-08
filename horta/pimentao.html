@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Pimentao</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <i class="fa fa-chevron-left" onclick="voltar()"></i>
+        <h1>Horta</h1>
+        <p></p>
+      </div>
+      <div class="images">
+        <img src="../images/eclipse.svg" alt="eclipse" />
+        <img src="../images/pimentao.svg" alt="pimentao" class="img" />
+      </div>
+      <div class="conteudo">
+        <h1>Pimentão</h1>
+        <p>
+          Rico em vitamina A é preciso destacar o seu poder antioxidante, mas
+          além disso o nutriente se destaca por ser de extrema importância para
+          o crescimento e desenvolvimento do tecido da pele. Além disso, o
+          pimentão vermelho previne a degeneração muscular e melhora a saúde dos
+          olhos, chegando inclusive a deixar a visão noturna mais aguçada. Sua
+          coloração vermelha também é fonte de vitamina C, o que torna essa
+          hortaliça-fruto ainda mais rica em nutrientes.
+        </p>
+        <h2>Benefícios</h2>
+        <p>- Fortalece o sistema imunológico;</p>
+        <p>- Protege o cérebro de degenerações;</p>
+        <p>
+          - O colágeno também é importante para os ossos e articulações, por
+          isso mesmo é interessante consumir alimentos ricos em vitamina C ajuda
+          de certa forma na saúde dessas partes do corpo, ajudado na locomoção.
+          Mas não se engane, o pimentão não tem quantidades boas de cálcio para
+          ajudar na saúde dos ossos de outras formas;
+        </p>
+        <p>
+          - A quercetina presente no pimentão é importante para proteger a saúde
+          do coração.
+        </p>
+      </div>
+    </div>
+    <script>
+      function voltar() {
+        var link = window.location.href
+        link = link.replace('horta/pimentao.html', '')
+        window.location.href = link + 'index.html'
+      }
+    </script>
+  </body>
+</html>

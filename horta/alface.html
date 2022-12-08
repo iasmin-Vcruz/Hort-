@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Alface</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <i class="fa fa-chevron-left" onclick="voltar()"></i>
+        <h1>Horta</h1>
+        <p></p>
+      </div>
+      <div class="images">
+        <img src="../images/eclipse.svg" alt="eclipse" />
+        <img src="../images/alface.svg" alt="alface" class="img" />
+      </div>
+      <div class="conteudo">
+        <h1>Alface</h1>
+        <p>
+          A alface possui baixo teor calórico, já que cada 100 g dela contém
+          somente 15 calorias. A folha contém vitamina A, vitamina C, niacina
+          (vitamina do complexo B) e minerais como cálcio, fósforo e ferro. É
+          rica também em zinco, cobre, enxofre, silício, ácido fólico e
+          clorofila.
+        </p>
+        <h2>Benefícios</h2>
+        <p>
+          - A alface é uma verdura que possui poucas calorias e é rica em
+          fibras, que promovem a sensação de saciedade e favorece a perda de
+          peso;
+        </p>
+        <p>.</p>
+        <p>- Ajuda a regular o açúcar no sangue;</p>
+        <p>.</p>
+        <p>- Mantém a saúde dos olhos;</p>
+        <p>.</p>
+        <p>
+          - A alface possui propriedades calmantes que ajudam a diminuir o
+          estresse e a excitabilidade do sistema nervoso central, ajudando a
+          combater a insônia e fazendo com que a pessoa durma melhor.
+        </p>
+        <p>.</p>
+        <p>
+          - A alface favorece o aumento do tamanho das fezes e a sua hidratação,
+          favorecendo a sua saída e sendo uma excelente opção para quem tem
+          prisão de ventre.
+        </p>
+      </div>
+    </div>
+    <script>
+      function voltar() {
+        var link = window.location.href
+        link = link.replace('horta/alface.html', '')
+        window.location.href = link + 'index.html'
+      }
+    </script>
+  </body>
+</html>

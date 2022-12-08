@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Batata</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <i class="fa fa-chevron-left" onclick="voltar()"></i>
+        <h1>Horta</h1>
+        <p></p>
+      </div>
+
+      <div class="images">
+        <img src="../images/eclipse.svg" alt="eclipse" />
+        <img src="../images/batata.svg" alt="batata" class="img" />
+      </div>
+      <div class="conteudo">
+        <h1>Batata</h1>
+        <p>
+          A batata é pobre em gordura e rica em carboidratos, ou seja, é uma
+          ótima fonte de energia. O tubérculo também possui quantidades
+          consideráveis de vitamina C; sais minerais, como o fósforo, cálcio e
+          potássio; e de vitaminas do complexo B, em menor quantidade. A batata
+          também é uma fonte importante de amido.
+        </p>
+        <h2>Benefícios</h2>
+        <p>
+          - A batata contém fibras e ótimas quantidades de amido resistente,
+          nutrientes que ajudam a controlar a saciedade e reduzir a vontade de
+          comer entre as refeições, diminuindo a ingestão de alimentos e
+          ajudando na perda de peso;
+        </p>
+        <p>
+          - Por ser rica em carboidratos, a batata fornece energia para o
+          cérebro, aumentando a disposição;
+        </p>
+        <p>
+          - Por conter carotenos e flavonoides, compostos com propriedades
+          antioxidantes e anti-inflamatórias, a batata ajuda a prevenir o
+          câncer, porque combate o excesso de radicais livres, o principal
+          responsável pelos danos às células saudáveis do organismo;
+        </p>
+        <p>
+          - Por conter carotenoides, vitamina C e flavonoides, a batata ajuda a
+          fortalecer as células do sistema imunológico, protegendo o organismo
+          contra situações, como alergias, resfriados e gripes.
+        </p>
+      </div>
+    </div>
+    <script>
+      function voltar() {
+        var link = window.location.href
+        link = link.replace('horta/batata.html', '')
+        window.location.href = link + 'index.html'
+      }
+    </script>
+  </body>
+</html>

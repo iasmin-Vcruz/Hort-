@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Tomate</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <i class="fa fa-chevron-left" onclick="voltar()"></i>
+        <h1>Horta</h1>
+        <p></p>
+      </div>
+      <div class="images">
+        <img src="../images/eclipse.svg" alt="eclipse" />
+        <img src="../images/tomate.svg" alt="tomate" class="img" />
+      </div>
+      <div class="conteudo">
+        <h1>Tomate</h1>
+        <p>
+          Tomate é uma boa fonte de vitaminas A, C e do complexo B. O mesmo
+          também possui quantidades significativas de sais minerais, como o
+          Fósforo, Ferro, Potássio, Cálcio, Magnésio, além de conter
+          pouquíssimas calorias.
+        </p>
+        <h2>Benefícios</h2>
+        <p>
+          - O tomate é rico em potássio, um mineral que ajuda a regular a
+          pressão arterial. Além disso, por ser rico em água também cria um
+          efeito diurético, ajudando a controlar a pressão arterial;
+        </p>
+        <p>
+          - O tomate contém poucas calorias e é rico em água, antioxidantes e
+          fibras, ajudando a diminuir a gordura corporal e a controlar o
+          apetite, sendo considerado um bom alimento para ser incluído nas
+          dietas para emagrecer;
+        </p>
+        <p>
+          - O tomate é rico em licopeno, que pode interferir no processo de
+          oxidação e regulação do metabolismo das gorduras, prevenindo a
+          ocorrência de fígado gordo;
+        </p>
+        <p>
+          - O tomate contém uma boa quantidade de vitamina C, que é necessária
+          para aumentar a absorção intestinal do ferro, principalmente
+          proveniente dos alimentos de origem vegetal. Assim, ao aumentar a
+          absorção de ferro, é possível haver maior formação de hemoglobina,
+          prevenindo a ocorrência de anemia.
+        </p>
+      </div>
+    </div>
+    <script>
+      function voltar() {
+        var link = window.location.href
+        link = link.replace('horta/tomate.html', '')
+        window.location.href = link + 'index.html'
+      }
+    </script>
+  </body>
+</html>

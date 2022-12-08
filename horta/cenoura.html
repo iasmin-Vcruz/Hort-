@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Cenoura</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <i class="fa fa-chevron-left" onclick="voltar()"></i>
+        <h1>Horta</h1>
+        <p></p>
+      </div>
+      <div class="images">
+        <img src="../images/eclipse.svg" alt="eclipse" />
+        <img src="../images/cenoura.svg" alt="cenoura" class="img" />
+      </div>
+      <div class="conteudo">
+        <h1>Cenoura</h1>
+        <p>
+          Os nutrientes presentes na cenoura são as vitaminas B, C e K, sais
+          minerais como o Potássio, Sódio, Cálcio, Magnésio. O betacaroteno
+          presente na cenoura também é antioxidante, ajudando a conter danos
+          celulares. Esse mesmo nutriente previne contra doenças.
+        </p>
+        <h2>Benefícios</h2>
+        <p>
+          - Seu consumo aumenta a quantidade de saliva, facilitando a digestão.
+          Por isso, comer cenoura regularmente pode ajudar a prevenir úlceras
+          gástricas e outros problemas digestivos;
+        </p>
+        <p>
+          - E tem benefícios da cenoura para o cabelo, unhas e olhos. Isso
+          graças ao betacaroteno que contribui para a renovação das células;
+        </p>
+        <p>
+          - Por ser fonte de um poderoso antioxidante chamado betacaroteno, a
+          cenoura também dá aquela forcinha para manter a saúde da pele,
+          inclusive ajudando na prevenção dos danos causados pela ação dos raios
+          UV;
+        </p>
+        <p>
+          - Os betacarotenos também ajudam a evitar o aparecimento de doenças
+          cardiovasculares, inibindo o processo de oxidação do colesterol ruim
+          (LDL);
+        </p>
+        <p>
+          - Por conta do seu poder antioxidante, consumir cenoura regularmente
+          ajuda a evitar o estresse oxidativo, que enfraquece a sinalização
+          nervosa e reduz a função cognitiva. Ou seja, a cenoura pode ajudar a
+          melhorar essa função e reduzir o risco de problemas de memória e
+          demência ligados à idade.
+        </p>
+      </div>
+    </div>
+    <script>
+      function voltar() {
+        var link = window.location.href
+        link = link.replace('horta/cenoura.html', '')
+        window.location.href = link + 'index.html'
+      }
+    </script>
+  </body>
+</html>
